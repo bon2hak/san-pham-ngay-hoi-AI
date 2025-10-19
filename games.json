@@ -11,7 +11,6 @@
       { "name": "A is for apple", "link": "https://hak-ahk.github.io/lop-1-A-is-for-apple/", "icon": "🧮" },
       { "name": "Xếp từ thành câu Colors-numbers", "link": "https://hak-akh.github.io/lop1.1-xep-thanh-cau-numbers-colors/", "icon": "🧮" },
       { "name": "Xếp từ thành câu I have", "link": "https://hak-ahk.github.io/lop-1-I-have/", "icon": "🧮" },
-      { "name": "colors- numbers", "link": "https://hak-hak.github.io/xep-tu-thanh-cau-number-color-animal/", "icon": "🧮" },
       { "name": "Đánh vần colors", "link": "https://hak-hak.github.io/danh-van-color-number-animal-objects/", "icon": "🧮" },
       { "name": "Xếp từ thành câu", "link": "https://hak-hak.github.io/xep-tu-thanh-cau-lop-1/", "icon": "🧮" },
       { "name": "Đánh vần ABC", "link": "https://hak-hak.github.io/danh-van-tu-vung-theo-bang-chu-cai/", "icon": "🧮" },
@@ -34,7 +33,8 @@
       { "name": "Toán tiếng Anh", "link": "https://example.com", "icon": "🧮" },
       { "name": "Toán tiếng Anh", "link": "https://example.com", "icon": "🧮" },
       { "name": "Toán tiếng Anh", "link": "https://example.com", "icon": "🧮" },
-      { "name": "Toán tiếng Anh", "link": "https://example.com", "icon": "🧮" }
+      { "name": "Toán tiếng Anh", "link": "https://example.com", "icon": "🧮" },
+      { "name": "colors- numbers", "link": "https://hak-hak.github.io/xep-tu-thanh-cau-number-color-animal/", "icon": "🧮" }
     ]
   },
   {
