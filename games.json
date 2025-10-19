@@ -28,12 +28,6 @@
       { "name": "This is...", "link": "https://hak-akh.github.io/nghe-viet-chinh-ta-this-is/", "icon": "🧮" },
       { "name": "Xếp câu This is...", "link": "https://hak-hak.github.io/xep-tu-thanh-cau-lop-1/", "icon": "🧮" },
       { "name": "Đánh vần ABC", "link": "https://hak-hak.github.io/danh-van-tu-vung-theo-bang-chu-cai/", "icon": "🧮" },
-      { "name": "Toán tiếng Anh", "link": "https://example.com", "icon": "🧮" },
-      { "name": "Toán tiếng Anh", "link": "https://example.com", "icon": "🧮" },
-      { "name": "Toán tiếng Anh", "link": "https://example.com", "icon": "🧮" },
-      { "name": "Toán tiếng Anh", "link": "https://example.com", "icon": "🧮" },
-      { "name": "Toán tiếng Anh", "link": "https://example.com", "icon": "🧮" },
-      { "name": "Toán tiếng Anh", "link": "https://example.com", "icon": "🧮" },
       { "name": "colors- numbers", "link": "https://hak-hak.github.io/xep-tu-thanh-cau-number-color-animal/", "icon": "🧮" }
     ]
   },
@@ -88,9 +82,8 @@
       { "name": "Daily routine", "link": "https://hakakh.github.io/SPELLING-DAILY-ROUTINE-G4/", "icon": "🧮" },
       { "name": "Wordsearch Daily routine", "link": "https://hakakh.github.io/wordsearch-daily-routine-1.1/", "icon": "🧮" },
       { "name": "Wordsearch Daily routine.1", "link": "https://hakakh.github.io/wordsearch-daily-routine/", "icon": "🧮" },
-      { "name": "Wordsearch plural", "link": "https://hakakh.github.io/singlar-and-plural-nouns/", "icon": "🧮" },
-      { "name": "Toán tiếng Anh", "link": "https://example.com", "icon": "🧮" }
-    ]
+      { "name": "Wordsearch plural", "link": "https://hakakh.github.io/singlar-and-plural-nouns/", "icon": "🧮" }
+     ]
   },
   {
     "class": "Lớp 5",
@@ -107,12 +100,6 @@
       { "name": "Xếp câu Where í live", "link": "https://hak-akh.github.io/G56-xep-cau-where-I-live/", "icon": "🧮" },
       { "name": "Xếp câu family", "link": "https://hak-akh.github.io/G4-xep-thanh-cau-my-family/", "icon": "🧮" },
       { "name": "Nghe viết family", "link": "https://hak-akh.github.io/G4-nghe-viet-chinh-ta-My-family/", "icon": "🧮" },
-      { "name": "Places RO6.1", "link": "https://hak-hak.github.io/Spelling-places-activites-time-RO6.1/", "icon": "🧮" },
-      { "name": "Build sentences Places RO6", "link": "https://hak-hak.github.io/Spelling-places-activities-time-RO6/", "icon": "🧮" },
-      { "name": "Spelling school and celebrations", "link": "https://hak-hak.github.io/RO6-Spelling-School-and-celebrations/", "icon": "🧮" },
-      { "name": "Daily routien", "link": "https://hakakh.github.io/SPELLING-DAILY-ROUTINE-G4/", "icon": "🧮" },
-      { "name": "Words and sentences Ro6", "link": "https://hak-hak.github.io/SPELLING-WORDS-AND-SENTENCES-RO6/", "icon": "🧮" },
-      { "name": "Spelling starters 1", "link": "https://hak-hak.github.io/SPELLING-t-m-t-tranh-Starters-1/", "icon": "🧮" },
       { "name": "Game Crush numbers", "link": "https://hak-hak.github.io/crush-number/", "icon": "🧮" },
       { "name": "Plural nouns", "link": "https://hakakh.github.io/SPELLING-SINGULAR-PLURAL-NOUNS/", "icon": "🧮" }
     ]
@@ -132,7 +119,15 @@
       { "name": "Viết chính tả Where I live", "link": "https://hak-akh.github.io/G56-viet-chinh-ta-where-i-live/", "icon": "🧮" },
       { "name": "Xếp câu Where I live", "link": "https://hak-akh.github.io/G56-xep-cau-where-I-live/", "icon": "🧮" },
       { "name": "Xếp câu My family", "link": "https://hak-akh.github.io/G4-xep-thanh-cau-my-family/", "icon": "🧮" },
-      { "name": "Viết My family", "link": "https://hak-akh.github.io/G4-nghe-viet-chinh-ta-My-family/", "icon": "🧮" }
+      { "name": "Xếp từ thành câu Grammar IOE K6", "link": "https://hakreading.github.io/xep-thanh-cau-grammar-IOE-k6/", "icon": "🧮" },
+      { "name": "Viết chính tả Grammar IOE K6", "link": "https://hakreading.github.io/viet-chinh-ta-grammar-IOE-k6/", "icon": "🧮" },
+      { "name": "Viết My family", "link": "https://hak-akh.github.io/G4-nghe-viet-chinh-ta-My-family/", "icon": "🧮" },
+      { "name": "Places RO6.1", "link": "https://hak-hak.github.io/Spelling-places-activites-time-RO6.1/", "icon": "🧮" },
+      { "name": "Build sentences Places RO6", "link": "https://hak-hak.github.io/Spelling-places-activities-time-RO6/", "icon": "🧮" },
+      { "name": "Spelling school and celebrations", "link": "https://hak-hak.github.io/RO6-Spelling-School-and-celebrations/", "icon": "🧮" },
+      { "name": "Daily routien", "link": "https://hakakh.github.io/SPELLING-DAILY-ROUTINE-G4/", "icon": "🧮" },
+      { "name": "Words and sentences Ro6", "link": "https://hak-hak.github.io/SPELLING-WORDS-AND-SENTENCES-RO6/", "icon": "🧮" },
+      { "name": "Spelling starters 1", "link": "https://hak-hak.github.io/SPELLING-t-m-t-tranh-Starters-1/", "icon": "🧮" },
     ]
   },
   {
@@ -146,13 +141,9 @@
       { "name": "Đọc câu 50-100/1000", "link": "https://hak-ahk.github.io/doc-cau-phien-am-IPA-50-to-100-1000/", "icon": "🧮" },
       { "name": "Đọc IPA 1-50/1000", "link": "https://hak-ahk.github.io/doc-phien-am-IPA-cau-1-to-50-1000/", "icon": "🧮" },
       { "name": "Đọc IPA 1-50/1000", "link": "https://hak-ahk.github.io/phien-am-IPA-tu-vung-1-50/", "icon": "🧮" },
-      { "name": "Viết mẫu câu 1-15 easy.1", "link": "https://hak-akh.github.io/easy-2-viet-chinh-ta-mau-cau-1-15/", "icon": "🧮" },
-      { "name": "Viết mẫu câu 1-15 easy.2", "link": "https://hak-akh.github.io/easy-viet-chinh-ta-mau-cau-1-to-15/", "icon": "🧮" },
-      { "name": "Viết mẫu câu 1-15.1", "link": "https://hak-akh.github.io/mau-cau-co-ban-1-to-15.1/", "icon": "🧮" },
-      { "name": "Mẫu câu 1-15", "link": "https://hak-akh.github.io/mau-cau-co-ban-1-to-15/", "icon": "🧮" },
       { "name": "School, celebrations, choresh", "link": "https://hak-hak.github.io/Spelling-Game-School-Celebrations-and-Chores/", "icon": "🧮" },
       { "name": "Xếp câu school, chores", "link": "https://hak-akh.github.io/Nghe-x-p-t-th-nh-c-u-School-chores/", "icon": "🧮" },
-      { "name": "Spelling starter 1 ", "link": "https://hak-hak.github.io/SPELLING-t-m-t-tranh-Starters-1/", "icon": "🧮" },
+      { "name": "Xếp từ thành câu Grammar IOE K7 ", "link": "https://hakreading.github.io/xep-thanh-cau-grammar-IOE-k7/", "icon": "🧮" },
       { "name": "Chính tả welcome back 1.1", "link": "https://hakakh.github.io/RO7-Spelling-Welcome-back-1.1/", "icon": "🧮" },
       { "name": "Chỉnh tả welcome back", "link": "https://hakakh.github.io/-RO7-SPELLING-WELCOME-BACK/", "icon": "🧮" },
       { "name": "Wordsearch Sports activities", "link": "https://hakakh.github.io/RO6-SPORT-ACTIVITIES/", "icon": "🧮" },
@@ -170,7 +161,6 @@
       { "name": "Book vs movie.2", "link": "https://hak-hak.github.io/SPELLING-BOOK-VS-MOVIE.2/", "icon": "🧮" },
       { "name": "Book vs movie.1", "link": "https://hak-hak.github.io/Spelling-RO8.1-cont/", "icon": "🧮" },
       { "name": "Welcome back RO8", "link": "https://hakakh.github.io/RO8-SPELLING-WBACK-PEOPLE-AND-DAILY-ACTIVITIES/", "icon": "🧮" },
-      { "name": "Spelling book vs moive", "link": "https://hakakh.github.io/Spelling-book-or-movie/", "icon": "🧮" },
       { "name": "Welcome back RO8", "link": "https://hakakh.github.io/RO8-welcome-back/", "icon": "🧮" }
    ]
   },
@@ -181,7 +171,13 @@
       { "name": "Welcome back RO9.1", "link": "https://hak-hak.github.io/RO9-SPELLING-WELCOME-BACK/", "icon": "🧮" },
       { "name": "Welcome back RO9", "link": "https://hakakh.github.io/RO9-Welcome-back/", "icon": "🧮" },
       { "name": "Book vs movie.2", "link": "https://hak-hak.github.io/SPELLING-BOOK-VS-MOVIE.2/", "icon": "🧮" },
-      { "name": "Book vs movie.1", "link": "https://hak-hak.github.io/Spelling-RO8.1-cont/", "icon": "🧮" }
+      { "name": "Book vs movie.1", "link": "https://hak-hak.github.io/Spelling-RO8.1-cont/", "icon": "🧮" },
+      { "name": "Grammar IOE K9.1", "link": "https://hakreading.github.io/xep-thanh-cau-grammar-IOE-K9/", "icon": "🧮" },
+      { "name": "Grammar IOE K9.2", "link": "https://hakreading.github.io/viet-chinh-ta-Grammar-IOE-K9//", "icon": "🧮" },
+      { "name": "Viết mẫu câu 1-15 easy.1", "link": "https://hak-akh.github.io/easy-2-viet-chinh-ta-mau-cau-1-15/", "icon": "🧮" },
+      { "name": "Viết mẫu câu 1-15 easy.2", "link": "https://hak-akh.github.io/easy-viet-chinh-ta-mau-cau-1-to-15/", "icon": "🧮" },
+      { "name": "Viết mẫu câu 1-15.1", "link": "https://hak-akh.github.io/mau-cau-co-ban-1-to-15.1/", "icon": "🧮" },
+      { "name": "Mẫu câu 1-15", "link": "https://hak-akh.github.io/mau-cau-co-ban-1-to-15/", "icon": "🧮" },
    ]
   }
 ]
