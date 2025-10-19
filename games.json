@@ -33,6 +33,7 @@
     "class": "Lớp 3",
     "color": "#2196F3",
     "games": [
+      { "name": "Ôn lại bảng chữ cái và từ vựng", "link": "https://hakenglishb4.github.io/Spelling-game-new-version/", "icon": "📝" },
       { "name": "Xếp câu Anna's family", "link": "https://hak-akh.github.io/G2-3-xep-cau-Anna-family/", "icon": "📝" },
       { "name": "Viết chính tả Anna family", "link": "https://hak-akh.github.io/G2-3-Anna-family/", "icon": "🧮" },
       { "name": "Nhân 1 chữ số", "link": "https://hak-ahk.github.io/G2-3-phep-nhan-1-chu-so/", "icon": "🧮" },
