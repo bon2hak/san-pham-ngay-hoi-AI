@@ -4,7 +4,7 @@
     "class": "Lớp 1",
     "color": "#4CAF50",
     "games": [
-      { "name": "Đọc phiên âm IPA", "link": "https://hakakh.github.io/numbers-to-20/", "icon": "🔤" },
+      { "name": "Học bảng chữ cái Tiếng Anh", "link": "https://hakreading.github.io/phonics-grade-1/", "icon": "🔤" },
       { "name": "Trắc nghiệm phép cộng", "link": "https://hak-ahk.github.io/lop-1-phep-cong-1-to-20/", "icon": "🧮" },
       { "name": "Gõ chữ động", "link": "https://hak-ahk.github.io/Lop-1-danh-van-hoat-canh-number-color-animal/", "icon": "🧮" },
       { "name": "Typing Alphabet", "link": "https://hak-ahk.github.io/typing-game-alphabet/", "icon": "🧮" },
