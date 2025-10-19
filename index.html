@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kho Game Học Tập</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; }
+  header {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: white; padding: 15px; text-align: center; position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .admin-btn {
+    position: absolute; right: 15px; top: 15px; background: #ff9800;
+    border: none; padding: 5px 10px; color: white; border-radius: 5px; cursor: pointer;
+  }
+  .btn-toggle-all {
+    display: block; margin: 15px auto; padding: 10px 15px;
+    background: #ff5722; color: white; border: none; border-radius: 6px; cursor: pointer;
+  }
+  .class-section {
+    max-width: 900px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .class-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .class-card {
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+  }
+  .class-card:hover {
+    transform: scale(1.05);
+  }
+
+  .game-list {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    border-radius: 6px;
+    margin-top: 8px;
+    padding: 0 15px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+  .game-list.open {
+    padding: 10px 15px;
+    max-height: 300px; /* giới hạn chiều cao để hiện thanh cuộn */
+    overflow-y: auto;
+  }
+
+  /* Tùy chỉnh thanh cuộn cho đẹp */
+  .game-list.open::-webkit-scrollbar {
+    width: 6px;
+  }
+  .game-list.open::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 3px;
+  }
+  .game-list.open::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+  }
+
+  .game-list li { 
+    margin: 8px 0; 
+    list-style: none; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  a { color: #0366d6; text-decoration: none; flex: 1; }
+  .delete-btn {
+    background: #f44336; color: white; border: none; border-radius: 4px; padding: 3px 6px;
+    cursor: pointer; margin-left: 10px;
+  }
+  .form-section {
+    background: white; max-width: 800px; margin: 20px auto; padding: 15px; border-radius: 10px; display: none;
+  }
+  .popup {
+    position: fixed; bottom: 20px; right: 20px; background: #4CAF50; color: white;
+    padding: 12px 20px; border-radius: 8px; display: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  🎮 TIẾNG ANH AN KHÊ - KHO GAME HỌC TẬP LỚP 1 → 9
+  <button class="admin-btn" onclick="showAdmin()">Quản trị</button>
+</header>
+
+<div class="form-section" id="adminForm">
+  <h3>➕ Quản trị game</h3>
+  <input id="gameName" placeholder="Tên game">
+  <input id="gameLink" placeholder="Link game">
+  <input id="gameIcon" placeholder="Icon (ví dụ: 🧩)">
+  <select id="gameClass">
+    <option value="Lớp 1">Lớp 1</option>
+    <option value="Lớp 2">Lớp 2</option>
+    <option value="Lớp 3">Lớp 3</option>
+    <option value="Lớp 4">Lớp 4</option>
+    <option value="Lớp 5">Lớp 5</option>
+    <option value="Lớp 6">Lớp 6</option>
+    <option value="Lớp 7">Lớp 7</option>
+    <option value="Lớp 8">Lớp 8</option>
+    <option value="Lớp 9">Lớp 9</option>
+  </select>
+  <br><br>
+  <button onclick="addGame()">Thêm game</button>
+  <button onclick="downloadJSON()">📥 Download games.json</button>
+  <input type="file" id="uploadFile" accept=".json" style="margin-top:10px;" onchange="uploadJSON(event)">
+  <button onclick="hideAdmin()">⬅ Quay về</button>
+</div>
+
+<button class="btn-toggle-all" onclick="toggleAll()">📂 Mở / Đóng tất cả</button>
+<div class="class-section" id="container"></div>
+<div class="popup" id="popup"></div>
+
+<script>
+let gamesData = [];
+let isAdmin = false;
+
+async function loadGames() {
+  try {
+    const res = await fetch('games.json');
+    if (!res.ok) throw new Error("Không tải được games.json");
+    gamesData = await res.json();
+    renderGames();
+  } catch (e) {
+    showPopup("⚠ Lỗi tải games.json", true);
+    console.error(e);
+  }
+}
+
+function renderGames() {
+  const container = document.getElementById('container');
+  container.innerHTML = "";
+  gamesData.forEach((cls, i) => {
+    const id = `class${i+1}`;
+    container.innerHTML += `
+      <div class="class-container">
+        <div class="class-card" style="background:${cls.color}" onclick="toggleGames('${id}')">
+          📘 ${cls.class}
+        </div>
+        <div id="${id}" class="game-list">
+          ${cls.games.length
+            ? cls.games.map((g, idx) => `
+              <li>
+                <a href="${g.link}" target="_blank">${g.icon} ${g.name}</a>
+                ${isAdmin ? `<button class="delete-btn" onclick="deleteGame(${i}, ${idx})">🗑</button>` : ""}
+              </li>`).join('')
+            : "<li>(Chưa có game)</li>"
+          }
+        </div>
+      </div>
+    `;
+  });
+}
+function toggleGames(id) {
+  const list = document.getElementById(id);
+  list.classList.toggle('open');
+}
+
+function toggleAll() {
+  document.querySelectorAll('.game-list').forEach(list => {
+    const open = list.classList.contains('open');
+    list.classList.toggle('open', !open);
+  });
+}
+
+function showAdmin() {
+  const pass = prompt("Nhập mật khẩu:");
+  if (pass === "hakadmin") {
+    isAdmin = true;
+    document.getElementById('adminForm').style.display = "block";
+    renderGames();
+  }
+}
+
+function hideAdmin() {
+  isAdmin = false;
+  document.getElementById('adminForm').style.display = "none";
+  renderGames();
+}
+
+function addGame() {
+  const name = gameName.value.trim();
+  const link = gameLink.value.trim();
+  const icon = gameIcon.value.trim();
+  const cls = gameClass.value;
+  if (!name || !link || !icon) return showPopup("⚠ Nhập đủ thông tin", true);
+  gamesData.find(c => c.class === cls).games.push({ name, link, icon });
+  renderGames();
+  showPopup(`✅ Đã thêm game vào ${cls}`);
+}
+
+function deleteGame(classIdx, gameIdx) {
+  gamesData[classIdx].games.splice(gameIdx, 1);
+  renderGames();
+  showPopup("🗑 Đã xoá game");
+}
+
+function downloadJSON() {
+  const blob = new Blob([JSON.stringify(gamesData, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'games.json';
+  a.click();
+  showPopup("📥 Đã tải games.json");
+}
+
+function uploadJSON(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      gamesData = JSON.parse(e.target.result);
+      renderGames();
+      showPopup("📤 Đã upload games.json");
+    } catch (err) {
+      showPopup("⚠ File không hợp lệ", true);
+    }
+  };
+  reader.readAsText(file);
+}
+
+function showPopup(msg, error) {
+  const popup = document.getElementById('popup');
+  popup.textContent = msg;
+  popup.style.background = error ? "#f44336" : "#4CAF50";
+  popup.style.display = "block";
+  setTimeout(() => popup.style.display = "none", 3000);
+}
+
+loadGames();
+</script>
+
+</body>
+</html>
